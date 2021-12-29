@@ -1,0 +1,17 @@
+package com.algaworks.di;
+
+import com.algaworks.di.model.Cliente;
+import com.algaworks.di.service.AtivacaoClienteService;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Cliente joao = new Cliente("João", "joao@gmail.com", "76545678");
+		Cliente maria = new Cliente("Maria", "maria@gmail.com", "87659876");
+
+		AtivacaoClienteService ativacaoCliente = new AtivacaoClienteService();
+		ativacaoCliente.ativar(joao);
+		ativacaoCliente.ativar(maria);
+	}
+
+}
